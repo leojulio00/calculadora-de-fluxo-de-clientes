@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".cards")
-const input1 = document.querySelector(".inputCard1").value
+const input1 = document.querySelector(".inputCard1")
 const input2 = document.querySelector(".inputCard2").value
 const input3 = document.querySelector(".inputCard3").value
 const input4 = document.querySelector(".inputCard4").value
