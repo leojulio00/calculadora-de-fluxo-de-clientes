@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+body{
+    overflow: hidden;
+    padding: 5% 0%;
+    background: #88FF95;
+}
+
+.splash{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -5%;
+    background: black;
+    color: #67E870
+    ;
+    z-index: 200;
+}
+
+.splash .txtSplash{
+    position: inherit;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    max-width: 500px;
+    min-width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -60px);
+}
+
+.animaSplash{
+    transform: translateX(500px);
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    transition: all 1s;
+    z-index: -200;
+    
+}
+.fade-in{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    transform: translateX(-40px);
+    opacity: 0;
+    animation: fadein 1s ease-in-out forwards;
+    
+}
+
+.fade-in h1{
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.splash img{
+    width: 180px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+header{
+    width: 100%;
+    
+    paddig: 30px 30px 0px 30px;
+    text-align: center;
+}
+
+header img{
+    width: 200px;
+    margin: 10px 10px;
+}
+header h2{
+    margin: 10px 0px;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -40px;
+    padding: 15%;
+    text-align: center;
+    
+    
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.cards{
+    position: absolute;
+    max-width: 600px;
+    min-width: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-125px, -190px);
+    padding: 20px;
+    display: block;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px rgba(0,0,0, .4);
+    display: none;
+    transition: all .5s;
+}
+
+.cards h2{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.cards .inputsCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.cards .inputsCard input{
+    background: none;
+    border: none;
+    border-bottom: 3px #67e870 solid;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+    letter-spacing: 1.5px;
+}
+
+.cards .inputsCard button{
+    font-family: lato;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2;
+    outline: none;
+    width: 110px;
+    margin: 0px 5px;
+    text-align: center;
+    padding: 5px 19px;
+    background: #88FF95;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 7px rgba(0,0,0, .4);
+}
+
+.activeCard{
+    display: block;
+}
+
+.results{
+    position: absolute;
+    width: 80vw;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40vw, -100px);    
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px rgba(0,0,0, .4);
+    z-index: 10;
+    display: none;
+}
+
+@keyframes fadein{
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+}
+
+
+
+@media (min-width: 600px) {
+    .cards{
+        transform: translate(-200px, -130px);
+    }
+}
+
+@media (min-width: 1000px) {
+    .cards{
+        transform: translate(-300px, -230px);
+    }
+}
+
+@media (min-width: 800px) {
+    .splash .txtSplash{
+        transform: translate(-250px, -80px);
+    }
+}
+
+
