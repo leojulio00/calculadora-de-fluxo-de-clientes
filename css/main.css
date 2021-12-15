@@ -6,9 +6,18 @@
 }
 
 body{
-    overflow: hidden;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding: 5% 0%;
-    background: #88FF95;
+    background: #70D06E;
+    background-image: linear-gradient(360deg, #70D06E 13.7%, rgba(136, 255, 149, 0.71) 85.22%);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 120%;
+    -o-background-size: cover;
+    background-position-y: center;
 }
 
 .splash{
@@ -71,7 +80,7 @@ body{
 header{
     width: 100%;
     
-    paddig: 30px 30px 0px 30px;
+    padding: 10px 30px 10px 30px;
     text-align: center;
 }
 
@@ -85,10 +94,8 @@ header h2{
 
 main{
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    margin-top: -40px;
-    padding: 15%;
+    
+    padding: 10%;
     text-align: center;
     
     
@@ -103,20 +110,23 @@ input[type="number"]{
 }
 
 .cards{
-    position: absolute;
+    position: relative;
     max-width: 600px;
     min-width: 150px;
-    top: 50%;
+    /*top: 50%;
     left: 50%;
-    transform: translate(-125px, -190px);
+    transform: translate(-130px, -180px);*/
+    margin: 0% 20%;
     padding: 20px;
     display: block;
-    margin-bottom: 30px;
+    marginbottom: 90px;
     background: white;
     border-radius: 5px;
     box-shadow: 5px 3px 10px rgba(0,0,0, .4);
     display: none;
     transition: all .5s;
+    opacity: 0;
+    animation: aparecer 1s ease-in-out forwards;
 }
 
 .cards h2{
@@ -139,7 +149,7 @@ input[type="number"]{
     border-bottom: 3px #67e870 solid;
     outline: none;
     margin-bottom: 20px;
-    padding: 0px 5px;
+    padding: 3px 5px;
     letter-spacing: 1.5px;
 }
 
@@ -169,12 +179,19 @@ input[type="number"]{
     padding: 5%;
     top: 50%;
     left: 50%;
-    transform: translate(-40vw, -100px);    
+    transform: translate(-40vw, 35px);    
     background: white;
     border-radius: 5px;
     box-shadow: 5px 3px 10px rgba(0,0,0, .4);
     z-index: 10;
     display: none;
+    opacity: 0;
+    animation: aparecer 1s ease-in-out forwards;
+}
+
+.results h1{
+    text-align: center;
+    font-weight: 700;
 }
 
 @keyframes fadein{
@@ -185,18 +202,37 @@ input[type="number"]{
     }
 }
 
-
-
-@media (min-width: 600px) {
-    .cards{
-        transform: translate(-200px, -130px);
+@keyframes aparecer {
+    to{
+        opacity: 1;
     }
 }
 
-@media (min-width: 1000px) {
-    .cards{
-        transform: translate(-300px, -230px);
+
+
+@media (max-width: 1100px) {
+    body{
+        overflow-x: hidden;
     }
+    .cards{
+        margin: -10% 0%;
+    }
+
+    .results{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }    
+}
+
+@media (min-width: 1100px) {
+    .cards{
+        margin: -10% 30%;
+    }
+
+    .results{
+        transform: translate(-40vw, -40px);
+        margin-bottom: 60px;
+    }    
 }
 
 @media (min-width: 800px) {
