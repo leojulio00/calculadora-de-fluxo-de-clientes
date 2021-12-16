@@ -194,6 +194,10 @@ input[type="number"]{
     font-weight: 700;
 }
 
+.txtHTrabalho{
+    margin: 15px;
+}
+
 @keyframes fadein{
     to{
         transform: translateX(0px);
