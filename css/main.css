@@ -196,7 +196,61 @@ input[type="number"]{
 
 .txtHTrabalho{
     margin: 15px;
+    
 }
+
+
+
+.tabelaResults{
+    border-collapse: collapse;
+    margin: 15px 0px;
+    min-width: 100px;
+    
+    
+}
+
+.tabelaResults thead tr{
+    background: #88FF95;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.tabelaResults th, .tabelaResults td{
+    padding: 12px 15px;
+}
+
+.tabelaResults tbody tr{
+    border-bottom: 1.5px solid #ddd;
+}
+
+.tabelaResults tbody tr:nth-of-type(even){
+    background: #f3f3f3;
+}
+
+.tabelaResults tbody tr:last-of-type{
+    border-bottom: 3px solid #88FF95;
+}
+
+.tabelaResults tbody td{
+    position: relative;
+}
+
+.tabelaResults tbody td span{
+    text-align: right;
+}
+
+
+.conclusoes{
+    margin: 20px 0px 0px 0px;
+}
+
+.conclusoes div{
+    margin: 5px 10px;
+}
+
+
+
 
 @keyframes fadein{
     to{

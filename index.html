@@ -30,47 +30,88 @@
     </header>
     <main>
         <div class="cards card1 activeCard">
-            <h2>Quantos balcões de atendimento a tua empresa tem?</h2>
+            <h2>Quantos balcões de atendimento a sua empresa tem?</h2>
             <div class="inputsCard">
                 <input type="number"" class="inputCard1"  placeholder="Digite algo aqui">
                 <button class="btnInput1">Próximo</button>
             </div>
         </div>
         <div class="cards card2">
-            <h2>Qual é o tempo médio de atendimento por cada cliente na tua empresa?</h2>
+            <h2>Qual é o tempo médio em minutos de atendimento de cada cliente por cada balcão na sua empresa?</h2>
             <div class="inputsCard">
                 <input type="number" class="inputCard2"  placeholder="Digite algo aqui">
                 <button class="btnInput2">Próximo</button>
             </div>
         </div>
         <div class="cards card3">
-            <h2>Quantas horas de trabalho os teus colaboradores terão por dia?</h2>
+            <h2>Quantas horas de trabalho os seus colaboradores terão por dia?</h2>
             <div class="inputsCard">
                 <input type="number" class="inputCard3"  placeholder="Digite algo aqui">
                 <button class="btnInput3">Próximo</button>
             </div>
         </div>
         <div class="cards card4">
-            <h2>Quanto tempo de descanso em minutos os teus colaboradores terão por dia?</h2>
+            <h2>Quanto tempo de descanso em minutos os seus colaboradores terão por dia?</h2>
             <div class="inputsCard">
                 <input type="number" class="inputCard4"  placeholder="Digite algo aqui">
                 <button class="btnInput4">Próximo</button>
             </div>
         </div>
+        <div class="cards card5">
+            <h2>Quanto custa em meticais o teu produto ou serviço?</h2>
+            <div class="inputsCard">
+                <input type="number" class="inputCard5"  placeholder="Digite algo aqui">
+                <button class="btnInput5">Próximo</button>
+            </div>
+        </div>
     </main>
     <section class="results">
-        <h1>As tuas Métricas</h1>
-        <p class="txtHTrabalho">Assumindo que na tua empresa está em vigor o modelo de <span class="hTrabalho">8</span> horas de trabalho, teremos:</p>
-        <table>
-            <tr>
-                <th>Descrição</th>
-                <th>Valores</th>
-            </tr>
-            <tr>
-                <td>Clientes atendidos por dia</td>
-                <td>225</td>
-            </tr>
+        <h1>Dados Finais</h1>
+        <p class="txtHTrabalho">Assumindo que na sua empresa está em vigor o modelo de <strong><span class="hTrabalho"></span> horas</strong> de trabalho, teremos:  </p>
+        <table class="tabelaResults">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valores</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Clientes atendidos por dia</td>
+                    <td class="nClientesPD"></td>
+                </tr>
+                <tr>
+                    <td>Clientes atendidos diariamente em cada balcão</td>
+                    <td class="nClientesPB"></td>
+                </tr>
+                <tr>
+                    <td>Lucro bruto dos atendimentos por dia</td>
+                    <td class="lucroBDia"></td>
+                </tr>
+                <tr>
+                    <td>Lucro Bruto de cada balcão por dia</td>
+                    <td class="lucroBDiaB"></td>
+                </tr>
+                <tr>
+                    <td>Lucro Bruto mensalmente</td>
+                    <td class="lucroBMes"></td>
+                </tr>
+                <tr>
+                    <td>Lucro Bruto anualmente</td>
+                    <td class="lucroBAno"></td>
+                </tr>
+            </tbody>
         </table>
+
+        <div class="conclusoes">
+            <h4>Possiveis ajustes que vão render mais:</h4>
+            <div>
+                <p>  -Aumentar o número de balcões;</p>
+                <p>  -Diminuir o número de minutos em cada atendimento;</p>
+                <p>  -Aumentar a hora de trabalho.</p>
+            </div>
+        </div>
     </section>
 
     <!--Script Area-->
